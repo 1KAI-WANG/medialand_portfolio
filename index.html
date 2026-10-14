@@ -234,6 +234,8 @@
   .skill-card-num { font-family: var(--mono); font-size: 10px; color: var(--teal-dim); letter-spacing: 0.22em; margin-bottom: 18px; opacity: 0.6; }
   .skill-card-title { font-family: var(--zh); font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 14px; }
   .skill-card-desc { font-size: 13px; color: var(--text-dim); line-height: 1.95; }
+  .literary-award-link { color: inherit; text-decoration: none; transition: color 0.3s; }
+  .literary-award-link:hover { color: var(--teal-pale); }
 
   /* ── WORKS ── */
   .works-list { display: flex; flex-direction: column; }
@@ -878,6 +880,7 @@
   <div class="nav-logo">EW — Portfolio</div>
   <ul class="nav-links">
     <li><a href="#about">關於</a></li>
+    <li><a href="#skills">能力核心</a></li>
     <li><a href="#works">作品</a></li>
     <li><a href="#philosophy">創意理念</a></li>
     <li><a href="#awards">獎項</a></li>
@@ -995,7 +998,7 @@
 </div>
 
 <!-- SKILLS -->
-<div class="section-wrap" style="padding-top: 0;">
+<div class="section-wrap" id="skills" style="padding-top: 0;">
   <div class="section-header reveal">
     <span class="section-num">02</span>
     <h2 class="section-title">能力核心</h2>
@@ -1006,7 +1009,7 @@
     <div class="skill-card">
       <div class="skill-card-num">01</div>
       <div class="skill-card-title">文字與說故事</div>
-      <div class="skill-card-desc">從商業文案、社群規劃到長篇故事創作，擅長捕捉語感與情緒節奏，讓文字成為連結品牌與人心的橋樑。曾獲多項文學獎肯定。</div>
+      <div class="skill-card-desc">從商業文案、社群規劃到長篇故事創作，擅長捕捉語感與情緒節奏，讓文字成為連結品牌與人心的橋樑。曾獲多項<a href="#awards" class="literary-award-link"><strong>文學獎肯定</strong></a>。</div>
     </div>
     <div class="skill-card">
       <div class="skill-card-num">02</div>
@@ -1030,17 +1033,6 @@
   </div>
   <div class="divider"><svg viewBox="0 0 1100 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path class="divider-path" d="M0,16 Q275,8 550,16 Q825,24 1100,16"><animate attributeName="d" values="M0,16 Q275,8 550,16 Q825,24 1100,16;M0,16 Q275,24 550,16 Q825,8 1100,16;M0,16 Q275,8 550,16 Q825,24 1100,16" dur="7s" repeatCount="indefinite"/></path></svg></div>
   <div class="works-list">
-    <div class="work-item reveal" data-work="0">
-      <div class="work-year">2023–2025</div>
-      <div class="work-info">
-        <div class="work-title">《我說：「我不知道」》年度藝術計劃</div>
-        <div class="work-desc">為期一年的個人藝術計劃，從生活的迷惘出發，以壁畫、即興演出、裝置、剪紙等媒材探索創作語言。</div>
-      </div>
-      <div class="work-right">
-        <div class="work-type">藝術計劃</div>
-        <div class="work-cta">展開詳情</div>
-      </div>
-    </div>
     <div class="work-item reveal" data-work="1">
       <div class="work-year">2026.01</div>
       <div class="work-info">
@@ -1060,6 +1052,17 @@
       </div>
       <div class="work-right">
         <div class="work-type">影像創作</div>
+        <div class="work-cta">展開詳情</div>
+      </div>
+    </div>
+    <div class="work-item reveal" data-work="0">
+      <div class="work-year">2023–2025</div>
+      <div class="work-info">
+        <div class="work-title">《我說：「我不知道」》年度藝術計劃</div>
+        <div class="work-desc">為期一年的個人藝術計劃，從生活的迷惘出發，以壁畫、即興演出、裝置、剪紙等媒材探索創作語言。</div>
+      </div>
+      <div class="work-right">
+        <div class="work-type">藝術計劃</div>
         <div class="work-cta">展開詳情</div>
       </div>
     </div>
@@ -1302,7 +1305,7 @@ const works = [
       <div class="artwork-caption">《言有靈》· 2025 · 政大創意實驗室</div>
       <p>2025年2月，以傳統宗教的莊嚴感塑造空間，將無法回答的問題寫在平安符上，佈置在胸膛被挖空的人偶周圍，邀請同學一同來回答。最終在展期結束後，將平安符全數燒毀，替為期一年的計劃寫下句號。</p>
 
-      <a class="portfolio-link" href="https://drive.google.com/file/d/1ckoUmjROgBEKbO6ZwH2VOWRfZOZHIkC6/view?usp=drive_link" target="_blank" rel="noopener">閱讀完整作品集描述</a>
+      <a class="portfolio-link" href="https://drive.google.com/file/d/1RQ6MrpxaRYsk8wEuxnti5LS8WvvkMS2Q/view?usp=sharing" target="_blank" rel="noopener">閱讀完整作品集描述</a>
     `,
     reflection: '「如何在保留自己想法的同時，讓觀眾理解我想傳達的概念。」這是我在這一年中面對的最大挑戰，也是我所學的廣告裡至關重要的命題。',
   },
@@ -1324,7 +1327,7 @@ const works = [
       <p>決定因應近期 Gen Z 將玩偶與飾品作為身份展演的趨勢，設計一款可以隨身攜帶的 10ml 香水吊飾：<strong>The Amulet</strong>。以輕便時髦的外型和能夠與補充瓶對接的永續設計，降低消費者的購買門檻、提高消費意義與使用價值，賦予香水作為護身符的意義。</p>
       <h3>執行與反思</h3>
       <p>在四週的密集會議中完成提案完善、參賽影片拍攝和密集的英語口說練習。雖然本次競賽並未晉級，評審指出我們過於注重商品在 L'Oréal 集團的通用性，沒有聚焦在單一品牌的設計風格上。這是寶貴的一課：<strong>在可行性與創意之間，選擇的力道比選擇的廣度更重要。</strong></p>
-      <a class="portfolio-link" href="https://drive.google.com/file/d/1ckoUmjROgBEKbO6ZwH2VOWRfZOZHIkC6/view?usp=drive_link" target="_blank" rel="noopener">閱讀完整作品集描述</a>
+      <a class="portfolio-link" href="https://drive.google.com/file/d/1RQ6MrpxaRYsk8wEuxnti5LS8WvvkMS2Q/view?usp=sharing" target="_blank" rel="noopener">閱讀完整作品集描述</a>
     `,
     reflection: '這是我首次使用英文進行提案，也是第一次完整走過從零到有的提案過程，更累積了從真實數據中分析消費者行為的能力。',
   },
@@ -1367,7 +1370,7 @@ const works = [
       <p>消費，是為了得到更好的生活。但好還要更好，在他人、廣告、社群媒體這充斥著各種想像的世界裡，追求理想生活彷彿一條沒有終點的路。</p>
       <p>商品和金錢堆砌的表象背後，那些來不及穿的衣服、拆封即遺忘的包裹，最終都走向被丟棄的相同命運。<strong>人們以為自己擁有越來越多的東西，實際上卻是一步一步地被擁有。</strong></p>
       <p>此作品共有兩張影像，透過實際拍攝的主題與人物攝影，使用 Midjourney 生成相似的模特兒，並透過影像後製軟體，將生成的圖片素材組合。</p>
-      <a class="portfolio-link" href="https://drive.google.com/file/d/1ckoUmjROgBEKbO6ZwH2VOWRfZOZHIkC6/view?usp=drive_link" target="_blank" rel="noopener">閱讀完整作品集描述</a>
+      <a class="portfolio-link" href="https://drive.google.com/file/d/1RQ6MrpxaRYsk8wEuxnti5LS8WvvkMS2Q/view?usp=sharing" target="_blank" rel="noopener">閱讀完整作品集描述</a>
     `,
     reflection: '這兩個系列是我第一次嘗試以 AI 工具作為創作夥伴，而非單純的輔助。如何讓生成影像與實拍影像之間的縫隙，本身也成為作品的一部分，是我在製作過程中最感興趣的問題。',
   },
@@ -1410,7 +1413,7 @@ const works = [
       <h3>教育下的妥協</h3>
       <p>走訪仍在使用的教室時，偶然發現老師辦公室擺放了幾座神明像。殘破的神像是其他迫遷戶留下的——園長會走訪其他迫遷戶，遇到因新居沒有足夠空間擺放神像而想要丟棄的情況，就會接手這些神像。這個細節，讓這場紀錄超越了單純的土地政策議題。</p>
       <p>「接下來也只能看市政府怎麼做了。」園區內的一句話道盡了所有迫遷戶的迷茫與無助。</p>
-      <a class="portfolio-link" href="https://drive.google.com/file/d/1ckoUmjROgBEKbO6ZwH2VOWRfZOZHIkC6/view?usp=drive_link" target="_blank" rel="noopener">閱讀完整作品集描述</a>
+      <a class="portfolio-link" href="https://drive.google.com/file/d/1RQ6MrpxaRYsk8wEuxnti5LS8WvvkMS2Q/view?usp=sharing" target="_blank" rel="noopener">閱讀完整作品集描述</a>
     `,
     reflection: '這是我第一次嘗試新聞採訪式的紀實影像，學到的不只是攝影技術，而是如何帶著尊重進入一個陌生的生命現場，如何讓影像說出文字無法說的話。',
   },
@@ -1433,7 +1436,7 @@ const works = [
       <h3>招新短片《無法抗劇的你》— 導演</h3>
       <p>擔任 2023 年麥高芬劇團招新短片《無法抗劇的你》的導演，負責腳本發想與現場實拍。這是我第一次完整主導一部短片的製作，從發想到拍攝，學習如何在有限資源下讓創意落地。</p>
       <a class="portfolio-link" href="https://youtu.be/f-qRIuA7gXA?si=VUwSrSSfHBdRhL6d" target="_blank" rel="noopener">觀看完整影片</a>
-      <a class="portfolio-link" href="https://drive.google.com/file/d/1ckoUmjROgBEKbO6ZwH2VOWRfZOZHIkC6/view?usp=drive_link" target="_blank" rel="noopener">閱讀完整作品集描述</a>
+      <a class="portfolio-link" href="https://drive.google.com/file/d/1RQ6MrpxaRYsk8wEuxnti5LS8WvvkMS2Q/view?usp=sharing" target="_blank" rel="noopener">閱讀完整作品集描述</a>
     `,
     reflection: '劇團工作大多使用課餘時間，平均一至兩週就需要進行一次彩排，緊迫的時間安排考驗執行能力與抗壓性，但也是激發我追求創意表現的重要開端。',
   },
